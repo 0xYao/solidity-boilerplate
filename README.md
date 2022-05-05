@@ -39,88 +39,28 @@ You need to setup the following GitHub secrets to run the GitHub workflows succe
 
 ### **Coverage**
 
-```bash
-yarn coverage
-```
-
-Runs solidity code coverage
-<br/>
+- `yarn coverage`: Runs solidity code coverage
 
 ### **Fork**
 
-```bash
-yarn fork
-```
-
-Runs a mainnet fork via hardhat's node forking util.
-
-```bash
-yarn fork:script {path}
-```
-
-Runs the script in mainnet's fork.
-
-```
-yarn fork:test
-```
-
-Runs tests that should be run in mainnet's fork.
-<br/>
+- `yarn fork`: Runs a mainnet fork via hardhat's node forking util.
+- `yarn fork:script {script_path}`: Runs the script in mainnet's fork.
+- `yarn fork:test`: Runs tests that should be run in mainnet's fork.
 
 ### **Lint**
 
-```bash
-yarn lint
-```
-
-Runs solhint.
-<br/>
-
-### **Prettier (lint fix)**
-
-```bash
-yarn lint:fix
-```
-
-Runs prettier
-<br/>
+- `yarn lint:fix`: Runs prettier and solhint
 
 ### **Release**
 
-```bash
-yarn release
-```
-
-Runs standard changelog, changes package.json version and modifies CHANGELOG.md accordingly.
-<br/>
+- `yarn release`: Runs standard changelog, changes package.json version and modifies CHANGELOG.md accordingly.
 
 ### **Test**
 
-```bash
-yarn test:all
-```
-
-Runs all solidity tests.
-<br/>
-
-```bash
-yarn test:unit
-```
-
-Runs all solidity tests in folder [unit](./test/unit)
-<br/>
-
-```bash
-yarn test:e2e
-```
-
-Runs all solidity tests in folder [e2e](./test/e2e)
-<br/>
+- `yarn test:all`: Runs all solidity tests.
+- `yarn test:unit`: Runs all solidity tests in folder [unit](./test/unit)
+- `yarn test:e2e`: Runs all solidity tests in folder [e2e](./test/e2e)
 
 ### **Gas report**
 
-```bash
-yarn test:gas
-```
-
-Runs all tests and report gas usage.
+- `yarn test:gas`: Runs all tests and report gas usage.
